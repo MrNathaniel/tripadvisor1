@@ -3,8 +3,8 @@
 }
 
 .header-container {
-  width: 1920;
-  margin: 0;
+  width: 1135px;
+  margin: 0 auto;
 }
 
 header {
@@ -21,6 +21,11 @@ header > div {
 
 header img {
   height: 40px;
+}
+
+.navigation-header {
+  display: flex;
+  justify-content: centerspace-between;
 }
 
 .navigation-header a:not(:first-child) {
@@ -43,4 +48,74 @@ header img {
 
 .navigation-header a:hover {
   background-color: lightgray;
+}
+
+.navigation-header a {
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+h1 > span {
+  color: red;
+}
+
+h1 {
+  line-height: 40px;
+}
+
+.container {
+  margin: 0 auto;
+}
+.navigation-menu > div {
+  padding: 12px;
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  height: 60px;
+}
+
+.pictures-bloc {
+  height: 430px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 2px;
+}
+
+.left-bloc {
+  background: orangered;
+  height: 100%;
+  flex: 1;
+}
+
+.right-bloc {
+  background-color: blue;
+  width: 480px;
+  height: 100%;
+}
+
+.right-bloc > div {
+  height: calc(50% - 1px);
+  width: 100%;
+}
+
+.right-bloc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-bloc div:first-child {
+  margin-bottom: 2px;
 }
