@@ -9,7 +9,7 @@
 }
 
 header {
-  height: 60px;
+  height: 100px;
   border-bottom: color lightgrey 1px;
 }
 
@@ -21,7 +21,9 @@ header > div {
 }
 
 header img {
-  height: 40px;
+  height: 35%;
+  width: 35%;
+  object-fit: cover;
 }
 
 .navigation-header {
@@ -35,6 +37,7 @@ header img {
 
 .navigation-header button {
   margin-left: 20px;
+  margin-top: 20px;
   background-color: black;
   color: white;
   border-radius: 15px;
@@ -72,7 +75,7 @@ h1 > span {
 }
 
 h1 {
-  line-height: 40px;
+  line-height: 100px;
 }
 
 .container {
@@ -92,25 +95,36 @@ h1 {
 
 img {
   height: 100%;
-  width: 100%;
+  flex: 1;
+
   object-fit: cover;
 }
 .pictures {
-  height: 430px;
-  margin-bottom: 100px;
   display: flex;
-  flex-wrap: wrap;
+  height: 430px;
+  margin-bottom: 10px;
   gap: 2px;
 }
 
 .left-bloc {
   height: 100%;
+  object-position: left;
+  object-fit: cover;
   flex: 1;
 }
 
-.right-bloc {
-  width: 480px;
+.left-bloc img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.right-bloc {
+  height: 100%;
+  width: 480px;
+}
+.right-bloc img {
+  height: 50%;
+  width: 100%;
 }
 
 .right-bloc > div {
@@ -120,4 +134,66 @@ img {
 
 .right-bloc div:first-child {
   margin-bottom: 2px;
+}
+
+.seconde-section {
+  height: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  border: solid color green 2px;
+  justify-content: space-between;
+}
+
+.second-section-container {
+  width: 70%;
+  padding-right: 10%;
+  margin-top: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.map-text img {
+  height: 50%;
+  width: 100%;
+}
+
+.bloc-map {
+  display: flex;
+  width: 50%;
+}
+
+.bloc-map {
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.map-text {
+  padding: 20px;
+  background-color: red;
+  font-family: Trip sans-serif;
+  font-size: 32px;
+}
+.map-text h3 {
+  font-family: Trip sans-serif;
+  font-size: 32px;
+}
+
+.map-text p {
+  font-size: 16px;
+}
+.map-text button {
+  margin-left: 15px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  height: 50px;
+  width: 148px;
+}
+
+.map-text img {
+  height: 100%;
+  object-fit: cover;
 }
